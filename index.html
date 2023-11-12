@@ -19,13 +19,14 @@
 
 </head>
 <body>
+<!--header star-->
 <header>
-    <div class="container">
+    <div id="star" class="container">
         <nav class="menu">
-            <a href="#">Inicio</a>
-            <a href="#">Educacion</a>
-            <a href="#">Trabajos</a>
-            <a href="#">Contactos</a>
+            <a href="#star">Inicio</a>
+            <a href="#education">Educacion</a>
+            <a href="#works">Trabajos</a>
+            <a href="#contact">Contactos</a>
         </nav>
         <div class="container-text">
             <div class="text">
@@ -35,6 +36,8 @@
         </div>
     </div>
 </header>
+<!--header end-->
+
 <!-- main star -->
 <section class="main">
     <section class="about-me">
@@ -45,7 +48,8 @@
             <div class="text-main">
                 <h3 class="title">Sobre mi</h3>
                 <p class="description">
-                    Soy un desarrollador web con experiencia en el desarrollo de aplicaciones web y móviles,
+                    Soy un <span>Desarrollador web</span> con experiencia en el desarrollo de aplicaciones web y
+                    móviles,
                     con conocimientos en el desarrollo de aplicaciones web con <span>HTML5,
                     CSS3, Bootstrap, JavaScript, Sass, Git, GitHub, PHP,SQL, PostgreSQL, </span>
                 </p>
@@ -55,8 +59,38 @@
 </section>
 <!-- main end -->
 
+<!--education star-->
+<section id="education" class="educations">
+    <div class="container">
+        <h3 class="education-title">Education</h3>
+        <div class="container-education">
+            <div class="education">
+                <h3 class="education-profession"> Bootcamp Full Stack JavaScript</h3>
+                <p class="education-name">2023 - Desafío Latam</p>
+                <p class="education-description">
+                    Actualmente estoy participando en el programa Full Stack JavaScript de Desafío Latam,
+                    donde estoy adquiriendo habilidades en el desarrollo web desde el frontend hasta el backend.
+                    Este programa incluye tecnologías como HTML, CSS, JavaScript, Node.js, React, y más.
+                </p>
+            </div>
+            <div class="education">
+                <h3 class="education-profession"> Tecnico Analista programador</h3>
+                <p class="education-name">2020-2021 Santo Tomas </p>
+                <p class="education-description">
+                    Durante mi período de estudio como Técnico Analista Programador en Santo Tomás,
+                    adquirí conocimientos sólidos en programación y análisis de sistemas.
+                    Enfoqué mis estudios en el desarrollo de software, aprendiendo lenguajes de programación
+                    como Java y C#. Además, obtuve experiencia práctica en el diseño y la implementación
+                    de soluciones informáticas eficientes y funcionales.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!--work star-->
-<section class="works">
+<section id="works" class="works">
     <div class="container">
         <h3 class="works-title">Trabajos</h3>
         <div class="container-works">
@@ -112,7 +146,7 @@
 
 <!--Home footer-->
 <footer>
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h3 class="contact-title">Contacto</h3>
             <form action="" class="contact-form">
