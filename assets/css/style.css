@@ -53,7 +53,7 @@ header {
 
 header .menu {
     margin: 20px 0;
-    text-align: center;
+    text-align: right;
 }
 
 header .menu a {
@@ -86,7 +86,7 @@ header .container-text .text {
 }
 
 header .container-text .text h1, h2 {
-    color: var(--blanco)
+    color: var(--blanco);
     font-weight: 300;
     margin: 0;
 }
@@ -205,7 +205,7 @@ header .container-text .text .proffesion {
 
 /* works star */
 .works {
-    background: var(--gris-tenue)
+    background: var(--gris-tenue);
     padding: 60px 0;
 }
 
@@ -253,17 +253,123 @@ header .container-text .text .proffesion {
 }
 
 .works .container .container-works .work .description {
-
     text-align: center;
 }
 
-.works .container .container-works .work .description-name {
+.works .container .container-works .work .description .description-name {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #3895ea;
+    color: var(--blue);
 }
 
-.works .container .container-works .work .description-category {
-    font-size: 1rem;
-    color: var(--gris-osucro);
+.works .container .container-works .work .description .description-category {
+    font-size: 0.5rem;
+    color: var(--gris-tenue);
 }
+
+/*footer star*/
+.footer-contact {
+    padding: 60px 0;
+}
+
+.contact-title {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 40px;
+    color: var(--orange);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-input-text, .contact-input-textarea, .contact-input-email {
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: var(--gris-oscuro);
+}
+
+.contact-input-text, .contact-input-email {
+    width: 49%;
+    margin-bottom: 20px;
+}
+
+.contact-input-textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 15px;
+}
+
+.contact-input-submit {
+    background: var(--blue);
+    border-radius: 5px;
+    padding: 15px 20px;
+    font-size: 1rem;
+    color: var(--blanco);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.contact-input-submit:hover {
+    background: var(--blue-tenue);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media {
+    background: var(--gris-oscuro);
+    padding: 60px 0;
+}
+
+.footer-container a {
+    color: var(--blanco);
+    width: 100px;
+    display: block;
+    padding: 15px 0;
+    margin: 0 10px;
+}
+
+.footer-container a:hover {
+    color: var(--blue);
+}
+
+/*footer end*/
+
+/*media query*/
+@media screen and (max-width: 800px) {
+    header .menu {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .works .container .container-works .work {
+        width: 46%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    header .container-text .text .main-title {
+        font-size: 35px;
+    }
+
+    header .container-text .text .proffesion {
+        font-size: 20px;
+    }
+}
+
+
